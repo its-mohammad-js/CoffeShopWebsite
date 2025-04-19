@@ -32,7 +32,7 @@ export default function Navbar() {
     >
       <div className="cursor-pointer">
         <img
-          src="/menu/CoffeeLogo.png"
+          src="/CoffeeLogo.png"
           alt="logo"
           className="size-16 md:size-24 rounded-full"
         />

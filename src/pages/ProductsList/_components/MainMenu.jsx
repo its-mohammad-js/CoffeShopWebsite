@@ -22,7 +22,7 @@ export default function MainMenu() {
       {Productsinfo.map(({ category, id, name, thumbnailSrc, price }) => (
         <div
           onClick={() => {
-            navigate(`/menu/product/${id}`);
+            navigate(`/product/${id}`);
             window.scroll({ top: 0, behavior: "smooth" });
           }}
           className="flex flex-col flex-none items-center justify-center cursor-pointer"

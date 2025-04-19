@@ -24,7 +24,7 @@ export default function Footer() {
           {/* logo */}
           <div className="cursor-pointer my-6 mx-4">
             <img
-              src="/menu/CoffeeLogo.png"
+              src="/CoffeeLogo.png"
               alt="logo"
               className="size-16 md:size-24 rounded-full"
             />

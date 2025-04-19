@@ -2,11 +2,11 @@ import { useTranslation } from "react-i18next";
 import Slider from "react-slick";
 
 const bannersData = [
-  { title: "title01", path: "/", src: "/menu/images/banner/Americano.jpg" },
-  { title: "title02", path: "/", src: "/menu/images/banner/Latte.jpg" },
-  { title: "title03", path: "/", src: "/menu/images/banner/Cappuccino.jpg" },
-  { title: "title04", path: "/", src: "/menu/images/banner/Americano.jpg" },
-  { title: "title05", path: "/", src: "/menu/images/banner/Macchiato.jpg" },
+  { title: "title01", path: "/", src: "/images/banner/Americano.jpg" },
+  { title: "title02", path: "/", src: "/images/banner/Latte.jpg" },
+  { title: "title03", path: "/", src: "/images/banner/Cappuccino.jpg" },
+  { title: "title04", path: "/", src: "/images/banner/Americano.jpg" },
+  { title: "title05", path: "/", src: "/images/banner/Macchiato.jpg" },
 ];
 
 export default function Banners() {
