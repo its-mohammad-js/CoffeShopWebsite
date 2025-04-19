@@ -14,8 +14,8 @@ function App() {
       <div className="mx-auto 2xl:max-w-[1440px]">
         <Navbar />
         <Routes>
-          <Route path="/menu" element={<ProductsList />} />
-          <Route path="/menu/product/:id" element={<ProductDetail />} />
+          <Route path="/" element={<ProductsList />} />
+          <Route path="/product/:id" element={<ProductDetail />} />
         </Routes>
       </div>
       <Footer />
