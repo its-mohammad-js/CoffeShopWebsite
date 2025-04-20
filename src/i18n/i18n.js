@@ -17,11 +17,11 @@ const resources = {
       banners: {
         allProducts: "All Products",
         mainTitle: "Suggested Products",
-        title01: "Espresso",
-        title02: "Latte",
-        title03: "Cappuccino",
-        title04: "Americano",
-        title05: "Macchiato",
+        title01: "Hot Drinks",
+        title02: "Cold Drinks",
+        title03: "Sandwiches",
+        title04: "Desserts",
+        title05: "Sweets",
       },
       insights: {
         title: "Suggested Products",
@@ -46,11 +46,11 @@ const resources = {
       banners: {
         allProducts: "همه محصولات",
         mainTitle: "محصولات پیشنهادی",
-        title01: "اسپرسو",
-        title02: "لته",
-        title03: "کاپوچینو",
-        title04: "امریکانو",
-        title05: "ماکیاتو",
+        title01: "نوشیدنی‌های گرم",
+        title02: "نوشیدنی‌های سرد",
+        title03: "ساندویچ‌ها",
+        title04: "دسرها",
+        title05: "شیرینی‌ها",
       },
       insights: {
         title: "پیشنهاد ما",

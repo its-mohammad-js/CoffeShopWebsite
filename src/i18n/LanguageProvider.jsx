@@ -8,10 +8,12 @@ export const useLanguage = () => useContext(LanguageContext);
 export const LanguageProvider = ({ children }) => {
   const { i18n } = useTranslation();
   const [language, setLanguage] = useState(i18n.language);
+  const [menuFilter, setFilter] = useState(null);
 
   useEffect(() => {
     i18n.changeLanguage(language);
     document.body.setAttribute("data-lang", language);
+    setFilter(null);
   }, [language, i18n]);
 
   const toggleLanguage = () => {
@@ -21,7 +23,9 @@ export const LanguageProvider = ({ children }) => {
   const isRTL = language === "fa";
 
   return (
-    <LanguageContext.Provider value={{ language, toggleLanguage, isRTL }}>
+    <LanguageContext.Provider
+      value={{ language, toggleLanguage, isRTL, setFilter, menuFilter }}
+    >
       {children}
     </LanguageContext.Provider>
   );

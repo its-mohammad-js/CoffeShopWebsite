@@ -1,6 +1,8 @@
 import { useTranslation } from "react-i18next";
 import Productsinfo from "../../../assets/Products";
 import { useNavigate } from "react-router-dom";
+import { useLanguage } from "../../../i18n/LanguageProvider";
+import { useEffect, useState } from "react";
 
 export default function MainMenu() {
   const {
@@ -8,18 +10,33 @@ export default function MainMenu() {
     i18n: { language },
   } = useTranslation();
   const navigate = useNavigate();
+  const { menuFilter, setFilter } = useLanguage();
+  const [filteredProducts, setProducts] = useState(Productsinfo);
+
+  useEffect(() => {
+    if (!menuFilter || menuFilter === null) {
+      setProducts(Productsinfo);
+    } else {
+      setProducts(
+        Productsinfo.filter(({ category }) => category[language] == menuFilter)
+      );
+    }
+  }, [menuFilter, Productsinfo]);
 
   return (
     <div className="w-full py-4 my-4 flex flex-wrap items-center gap-8 px-16 justify-center">
       <h4
         className={`${
           language !== "fa" ? "text-start" : "text-end"
-        } w-full my-2 md:my-4 text-2xl md:text-3xl font-bold text-[#8d2f2d]`}
+        } w-full my-2 md:my-4  text-2xl md:text-3xl font-bold text-[#8d2f2d]`}
       >
-        {t("banners.allProducts")}
+        <span onClick={() => setFilter(null)} className="cursor-pointer">
+          {t("banners.allProducts")}
+        </span>
+        <span className="text-2xl"> / {menuFilter}</span>
       </h4>
 
-      {Productsinfo.map(({ category, id, name, thumbnailSrc, price }) => (
+      {filteredProducts.map(({ category, id, name, thumbnailSrc, price }) => (
         <div
           onClick={() => {
             navigate(`/product/${id}`);

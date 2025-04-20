@@ -1,12 +1,13 @@
 import { useTranslation } from "react-i18next";
 import Slider from "react-slick";
+import { useLanguage } from "../../../i18n/LanguageProvider";
 
 const bannersData = [
-  { title: "title01", path: "/", src: "/images/banner/Americano.jpg" },
-  { title: "title02", path: "/", src: "/images/banner/Latte.jpg" },
-  { title: "title03", path: "/", src: "/images/banner/Cappuccino.jpg" },
-  { title: "title04", path: "/", src: "/images/banner/Americano.jpg" },
-  { title: "title05", path: "/", src: "/images/banner/Macchiato.jpg" },
+  { title: "title01", path: "/", src: "/images/banner/HotDrinks.jpg" },
+  { title: "title02", path: "/", src: "/images/banner/ColdDrinks.jpg" },
+  { title: "title03", path: "/", src: "/images/banner/Sandwiches.jpg" },
+  { title: "title04", path: "/", src: "/images/banner/Desserts.jpg" },
+  { title: "title05", path: "/", src: "/images/banner/Sweets.jpg" },
 ];
 
 export default function Banners() {
@@ -44,9 +45,13 @@ export default function Banners() {
 
 const Banner = ({ src, title }) => {
   const { t } = useTranslation();
+  const { setFilter } = useLanguage();
 
   return (
-    <div className="lg:w-64 h-48 md:h-72 rounded-xl font-bold text-xl relative overflow-hidden group flex-none lg:h-64">
+    <div
+      onClick={() => setFilter(t(`banners.${title}`))}
+      className="lg:w-64 h-48 md:h-72 rounded-xl font-bold text-xl relative overflow-hidden group flex-none lg:h-64"
+    >
       <img
         src={src}
         alt="thumbnail"
