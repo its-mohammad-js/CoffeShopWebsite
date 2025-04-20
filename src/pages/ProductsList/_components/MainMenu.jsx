@@ -30,10 +30,16 @@ export default function MainMenu() {
           language !== "fa" ? "text-start" : "text-end"
         } w-full my-2 md:my-4  text-2xl md:text-3xl font-bold text-[#8d2f2d]`}
       >
-        <span onClick={() => setFilter(null)} className="cursor-pointer">
+        <span
+          onClick={() => setFilter(null)}
+          className="cursor-pointer hover:underline"
+        >
           {t("banners.allProducts")}
         </span>
-        <span className="text-2xl"> / {menuFilter}</span>
+        <span className={`${!menuFilter && "hidden"} text-2xl`}>
+          {" "}
+          / {menuFilter}
+        </span>
       </h4>
 
       {filteredProducts.map(({ category, id, name, thumbnailSrc, price }) => (

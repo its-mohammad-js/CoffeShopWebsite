@@ -27,6 +27,7 @@ const resources = {
         title: "Suggested Products",
         subtitle:
           "Discover our handpicked favorites – perfect for any time of day.",
+        btnTitle: "Show More",
       },
     },
   },
@@ -56,6 +57,7 @@ const resources = {
         title: "پیشنهاد ما",
         subtitle:
           "منتخب‌های ویژه ما را امتحان کنید – مناسب برای هر ساعتی از روز.",
+        btnTitle: "جزئیات بیشتر",
       },
     },
   },

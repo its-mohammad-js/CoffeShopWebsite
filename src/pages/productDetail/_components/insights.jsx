@@ -1,7 +1,13 @@
 import { useTranslation } from "react-i18next";
 import Productsinfo from "../../../assets/Products";
+import { useNavigate } from "react-router-dom";
 
-// const productCardsData = [Productsinfo[0]];
+const productCardsData = [
+  Productsinfo[4],
+  Productsinfo[20],
+  Productsinfo[12],
+  Productsinfo[14],
+];
 
 export default function Insights() {
   const {
@@ -9,6 +15,7 @@ export default function Insights() {
     i18n: { language },
   } = useTranslation();
   const isFarsi = language === "fa";
+  const navigate = useNavigate();
 
   return (
     <div className="my-6 md:my-8 pt-24 relative">
@@ -29,8 +36,30 @@ export default function Insights() {
           </div>
 
           <div className="flex items-center justify-evenly py-8 overflow-auto gap-8 px-4">
-            {[0, 0, 0].map(() => (
-              <div className="w-64 rounded-lg h-80 flex-none bg-gray-400"></div>
+            {productCardsData.map(({ thumbnailSrc, name, desc, id }) => (
+              <div className="w-64 rounded-lg flex-none bg-gray-100 overflow-hidden p-2.5 space-y-2">
+                <div className="w-full h-48 overflow-hidden rounded-xl">
+                  <img
+                    src={thumbnailSrc}
+                    alt="thumbnail"
+                    className="size-full object-cover"
+                  />
+                </div>
+                <h4 className="text-xl font-bold">{name[language]}</h4>
+                <p className="line-clamp-3 text-sm">{desc[language]}</p>
+                <button
+                  onClick={() => {
+                    navigate(`/product/${id}`);
+                    window.scroll({
+                      top: 0,
+                      behavior: "smooth",
+                    });
+                  }}
+                  className="bg-[#8D2F2D] mt-3 text-gray-200 px-2 cursor-pointer py-1 w-2/3 rounded-xl"
+                >
+                  {t("insights.btnTitle")}
+                </button>
+              </div>
             ))}
           </div>
         </div>

@@ -45,7 +45,6 @@ export default function ProductInfo() {
           <p className="flex items-center text-lg font-semibold">
             <p>{productData.price} &nbsp;</p>
             <span>{isFarsi ? "تومان" : " Toman"}</span>
-            {/* <span>Off</span> */}
           </p>
         </div>
       </div>

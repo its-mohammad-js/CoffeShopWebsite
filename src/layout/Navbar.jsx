@@ -3,7 +3,6 @@ import { useLanguage } from "../i18n/LanguageProvider";
 import { navList } from "./layout.const";
 import { useNavigate } from "react-router-dom";
 import { useRef, useState } from "react";
-import { FaChevronDown } from "react-icons/fa";
 import { IoChevronDown } from "react-icons/io5";
 import useOutSideClick from "../hooks/useOutSideClick";
 import { RiMenu2Line } from "react-icons/ri";
@@ -30,7 +29,16 @@ export default function Navbar() {
         isRTL && "flex-row-reverse"
       } flex relative items-center justify-between px-4 md:px-10 py-2`}
     >
-      <div className="cursor-pointer">
+      <div
+        onClick={() => {
+          navigate("/");
+          window.scroll({
+            top: 0,
+            behavior: "smooth",
+          });
+        }}
+        className="cursor-pointer"
+      >
         <img
           src="/CoffeeLogo.png"
           alt="logo"
