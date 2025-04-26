@@ -6,8 +6,6 @@ export default function ProductDetail() {
     <div className="">
       <ProductInfo />
       <Insights />
-      {/* <div className="">testimonials</div>
-      <div className="">CTA</div> */}
     </div>
   );
 }

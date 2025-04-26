@@ -3,11 +3,31 @@ import Slider from "react-slick";
 import { useLanguage } from "../../../i18n/LanguageProvider";
 
 const bannersData = [
-  { title: "title01", path: "/", src: "/images/banner/HotDrinks.jpg" },
-  { title: "title02", path: "/", src: "/images/banner/ColdDrinks.jpg" },
-  { title: "title03", path: "/", src: "/images/banner/Sandwiches.jpg" },
-  { title: "title04", path: "/", src: "/images/banner/Desserts.jpg" },
-  { title: "title05", path: "/", src: "/images/banner/Sweets.jpg" },
+  {
+    title: "title01",
+    path: "/",
+    src: "https://brgcjextuxehgykzniwp.supabase.co/storage/v1/object/sign/productimages/HotDrinks.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InN0b3JhZ2UtdXJsLXNpZ25pbmcta2V5X2M5NWQ3MzRiLWE5OGMtNGVkNS04YWIyLWUxYmMwMjQ1N2FiNiJ9.eyJ1cmwiOiJwcm9kdWN0aW1hZ2VzL0hvdERyaW5rcy5qcGciLCJpYXQiOjE3NDU1MTM4NTksImV4cCI6MTc0NjExODY1OX0.K0cJVjXxHFhuEhZNM4nLIZCr-rbK6FEFxSX5zdovovM",
+  },
+  {
+    title: "title02",
+    path: "/",
+    src: "https://brgcjextuxehgykzniwp.supabase.co/storage/v1/object/sign/productimages/ColdDrinks.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InN0b3JhZ2UtdXJsLXNpZ25pbmcta2V5X2M5NWQ3MzRiLWE5OGMtNGVkNS04YWIyLWUxYmMwMjQ1N2FiNiJ9.eyJ1cmwiOiJwcm9kdWN0aW1hZ2VzL0NvbGREcmlua3MuanBnIiwiaWF0IjoxNzQ1NTEzNzM1LCJleHAiOjE3NzcwNDk3MzV9.Y19a71qGOiAOQsniIjS0XfmSqG70jwCtzFOLSRZ_Wm8",
+  },
+  {
+    title: "title03",
+    path: "/",
+    src: "https://brgcjextuxehgykzniwp.supabase.co/storage/v1/object/sign/productimages/Sandwiches.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InN0b3JhZ2UtdXJsLXNpZ25pbmcta2V5X2M5NWQ3MzRiLWE5OGMtNGVkNS04YWIyLWUxYmMwMjQ1N2FiNiJ9.eyJ1cmwiOiJwcm9kdWN0aW1hZ2VzL1NhbmR3aWNoZXMuanBnIiwiaWF0IjoxNzQ1NTEzODc2LCJleHAiOjE3NzcwNDk4NzZ9._aGtTvsnwRapgG30LMeGAfeUF2vecSa9DIUmXrMCiBM",
+  },
+  {
+    title: "title04",
+    path: "/",
+    src: "https://brgcjextuxehgykzniwp.supabase.co/storage/v1/object/sign/productimages/Desserts.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InN0b3JhZ2UtdXJsLXNpZ25pbmcta2V5X2M5NWQ3MzRiLWE5OGMtNGVkNS04YWIyLWUxYmMwMjQ1N2FiNiJ9.eyJ1cmwiOiJwcm9kdWN0aW1hZ2VzL0Rlc3NlcnRzLmpwZyIsImlhdCI6MTc0NTUxMzc3MSwiZXhwIjoxNzc3MDQ5NzcxfQ.5iV451jB-iIER6aU7bfroUXwpyHIFK7Bz4ihjTIH4LA",
+  },
+  {
+    title: "title05",
+    path: "/",
+    src: "https://brgcjextuxehgykzniwp.supabase.co/storage/v1/object/sign/productimages/Sweets.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InN0b3JhZ2UtdXJsLXNpZ25pbmcta2V5X2M5NWQ3MzRiLWE5OGMtNGVkNS04YWIyLWUxYmMwMjQ1N2FiNiJ9.eyJ1cmwiOiJwcm9kdWN0aW1hZ2VzL1N3ZWV0cy5qcGciLCJpYXQiOjE3NDU1MTM4OTUsImV4cCI6MTc3NzA0OTg5NX0.xfP3TZo7g6Tfft42SLIjs_7e4eQjW2NsObB0aSDkFqI",
+  },
 ];
 
 export default function Banners() {
