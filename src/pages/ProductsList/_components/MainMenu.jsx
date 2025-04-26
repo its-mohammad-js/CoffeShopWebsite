@@ -1,9 +1,8 @@
 import { useTranslation } from "react-i18next";
-import Productsinfo from "../../../assets/Products";
 import { useNavigate } from "react-router-dom";
 import { useLanguage } from "../../../i18n/LanguageProvider";
 import { useEffect, useState } from "react";
-import { supabase } from "../../../../supabaseClient";
+import ProductsLoader from "./ProductCardLoader";
 
 export default function MainMenu() {
   const {
@@ -25,11 +24,9 @@ export default function MainMenu() {
         )
       );
     }
-  }, [menuFilter]);
+  }, [menuFilter, products]);
 
-  console.log(typeof filteredProducts);
-
-  if (loadig) return <>loading</>;
+  if (loadig) return <ProductsLoader />;
 
   if (!loadig && filteredProducts?.length)
     return (
