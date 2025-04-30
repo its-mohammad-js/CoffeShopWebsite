@@ -19,9 +19,9 @@ const resources = {
         mainTitle: "Suggested Products",
         title01: "Hot Drinks",
         title02: "Cold Drinks",
-        title03: "Sandwiches",
+        title03: "shakes",
         title04: "Desserts",
-        title05: "Sweets",
+        title05: "accessory",
       },
       insights: {
         title: "Suggested Products",
@@ -49,9 +49,9 @@ const resources = {
         mainTitle: "محصولات پیشنهادی",
         title01: "نوشیدنی‌های گرم",
         title02: "نوشیدنی‌های سرد",
-        title03: "ساندویچ‌ها",
+        title03: "شیک ها",
         title04: "دسرها",
-        title05: "شیرینی‌ها",
+        title05: "اکسسوری",
       },
       insights: {
         title: "پیشنهاد ما",

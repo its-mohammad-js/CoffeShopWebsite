@@ -33,7 +33,7 @@ export default function Insights() {
             dir={language === "fa" ? "rtl" : "ltr"}
             className="w-11/12 h-full mx-auto"
           >
-            <div className="flex items-center font-semibold gap-x-2 text-[#8d2f2d]">
+            <div className="flex z-10 relative items-center font-semibold gap-x-2 text-[#8d2f2d]">
               <h4 className="text-2xl">{t("insights.title")}</h4>
               <p className="text-6xl font-bold">/</p>
               <span className="w-64">{t("insights.subtitle")}</span>

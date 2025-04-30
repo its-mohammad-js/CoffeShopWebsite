@@ -16,7 +16,7 @@ const bannersData = [
   {
     title: "title03",
     path: "/",
-    src: "https://brgcjextuxehgykzniwp.supabase.co/storage/v1/object/sign/productimages/Sandwiches.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InN0b3JhZ2UtdXJsLXNpZ25pbmcta2V5X2M5NWQ3MzRiLWE5OGMtNGVkNS04YWIyLWUxYmMwMjQ1N2FiNiJ9.eyJ1cmwiOiJwcm9kdWN0aW1hZ2VzL1NhbmR3aWNoZXMuanBnIiwiaWF0IjoxNzQ1NTEzODc2LCJleHAiOjE3NzcwNDk4NzZ9._aGtTvsnwRapgG30LMeGAfeUF2vecSa9DIUmXrMCiBM",
+    src: "https://brgcjextuxehgykzniwp.supabase.co/storage/v1/object/sign/productimages/sebastian-coman-photography-rwBJaJdesGg-unsplash.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InN0b3JhZ2UtdXJsLXNpZ25pbmcta2V5X2M5NWQ3MzRiLWE5OGMtNGVkNS04YWIyLWUxYmMwMjQ1N2FiNiJ9.eyJ1cmwiOiJwcm9kdWN0aW1hZ2VzL3NlYmFzdGlhbi1jb21hbi1waG90b2dyYXBoeS1yd0JKYUpkZXNHZy11bnNwbGFzaC5qcGciLCJpYXQiOjE3NDYwMDQ0MjAsImV4cCI6MTc3NzU0MDQyMH0.aiNkB5Cj-Azgo37Efx6AkzHIaX4q7_w84QZiXFPbd3Q",
   },
   {
     title: "title04",
@@ -26,7 +26,7 @@ const bannersData = [
   {
     title: "title05",
     path: "/",
-    src: "https://brgcjextuxehgykzniwp.supabase.co/storage/v1/object/sign/productimages/Sweets.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InN0b3JhZ2UtdXJsLXNpZ25pbmcta2V5X2M5NWQ3MzRiLWE5OGMtNGVkNS04YWIyLWUxYmMwMjQ1N2FiNiJ9.eyJ1cmwiOiJwcm9kdWN0aW1hZ2VzL1N3ZWV0cy5qcGciLCJpYXQiOjE3NDU1MTM4OTUsImV4cCI6MTc3NzA0OTg5NX0.xfP3TZo7g6Tfft42SLIjs_7e4eQjW2NsObB0aSDkFqI",
+    src: "https://brgcjextuxehgykzniwp.supabase.co/storage/v1/object/sign/productimages/harper-sunday-uRuF9ABj0NY-unsplash.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InN0b3JhZ2UtdXJsLXNpZ25pbmcta2V5X2M5NWQ3MzRiLWE5OGMtNGVkNS04YWIyLWUxYmMwMjQ1N2FiNiJ9.eyJ1cmwiOiJwcm9kdWN0aW1hZ2VzL2hhcnBlci1zdW5kYXktdVJ1RjlBQmowTlktdW5zcGxhc2guanBnIiwiaWF0IjoxNzQ2MDA0MzY0LCJleHAiOjE3Nzc1NDAzNjR9.1BgNjDF0rsLgzbE948rYkZaBJlhQ3rK9JXYDZiCvOFY",
   },
 ];
 
