@@ -26,7 +26,7 @@ const bannersData = [
   {
     title: "title05",
     path: "/",
-    src: "https://brgcjextuxehgykzniwp.supabase.co/storage/v1/object/sign/productimages/harper-sunday-uRuF9ABj0NY-unsplash.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InN0b3JhZ2UtdXJsLXNpZ25pbmcta2V5X2M5NWQ3MzRiLWE5OGMtNGVkNS04YWIyLWUxYmMwMjQ1N2FiNiJ9.eyJ1cmwiOiJwcm9kdWN0aW1hZ2VzL2hhcnBlci1zdW5kYXktdVJ1RjlBQmowTlktdW5zcGxhc2guanBnIiwiaWF0IjoxNzQ2MDA0MzY0LCJleHAiOjE3Nzc1NDAzNjR9.1BgNjDF0rsLgzbE948rYkZaBJlhQ3rK9JXYDZiCvOFY",
+    src: "https://brgcjextuxehgykzniwp.supabase.co/storage/v1/object/sign/productimages/elin-melaas-d7-QG58ONm0-unsplash.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InN0b3JhZ2UtdXJsLXNpZ25pbmcta2V5X2M5NWQ3MzRiLWE5OGMtNGVkNS04YWIyLWUxYmMwMjQ1N2FiNiJ9.eyJ1cmwiOiJwcm9kdWN0aW1hZ2VzL2VsaW4tbWVsYWFzLWQ3LVFHNThPTm0wLXVuc3BsYXNoLmpwZyIsImlhdCI6MTc0NjAwNTgxOCwiZXhwIjoxNzc3NTQxODE4fQ.ETkaP0wkXue_jqCGiOUW6qaB5YBNm3C4BQI1BS8VlCU",
   },
 ];
 
