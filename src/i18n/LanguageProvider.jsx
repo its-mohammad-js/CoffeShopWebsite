@@ -19,13 +19,14 @@ export const LanguageProvider = ({ children }) => {
     const getProducts = async () => {
       setProducts({ loadig: true, products: [] });
 
-      let { data: Products, error } = await supabase
-        .from("Products")
-        .select("*");
+      const res = await fetch(
+        "https://theorycafe.ir/wp-json/custom/v1/get-products"
+      );
+      const productsList = await res.json();
 
       setProducts({
         loadig: false,
-        products: Products,
+        products: productsList,
       });
     };
 
